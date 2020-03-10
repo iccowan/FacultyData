@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+body {
+    font-family: 'Sen', sans-serif;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right 10%;
+}
+
+h1 {
+    margin: 10px;
+    margin-left: 0;
+    font-size: 36px;
+}
+
+h5 {
+    float: right;
+    margin-right: 10%;
+}
+
+span {
+    background-color: aqua;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+h5 a {
+    text-decoration: none;
+    color: black;
+}
+
+h5 span:hover {
+    border-color: black;
+    box-shadow: 5px 5px 10px;
+}
+
+ul {
+    margin-top: 80px;
+    list-style-type: none;
+}
+
+li {
+    margin: 20px;
+}
+
+li a {
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    background-color: burlywood;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+li a:hover {
+    color: aqua;
+    box-shadow: 5px 5px 10px;
+}
+
+div h2 {
+    padding: 10px;
+    margin-right: 10%;
+    animation: fade-in;
+    animation-duration: 1s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 100%;
+        left: auto;
+        transform: translateX(0px);
+    }
+}
+
+div h2:nth-child(2n) {
+    background-color: red;
+    color: black;
+}
+div h2:nth-child(2n+1) {
+    background-color: black;
+    color: red;
+}
